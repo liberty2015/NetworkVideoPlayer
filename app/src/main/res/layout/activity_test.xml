@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.accurme.networkvideoplayer.demo.TestActivity">
+    <com.accurme.networkvideoplayer.widget.NetworkVideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+    </com.accurme.networkvideoplayer.widget.NetworkVideoView>
+    <!--<LinearLayout-->
+        <!--android:id="@+id/normal_container"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="250dp">-->
+
+    <!--</LinearLayout>-->
+    <RelativeLayout
+        android:layout_below="@id/videoView"
+        android:id="@+id/full_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:text="23333"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>
